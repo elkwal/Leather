@@ -1,5 +1,8 @@
 from django.db import models
 
+
+
+
 class Category(models.Model):
     name = models.CharField(max_length=120)
 
@@ -31,3 +34,51 @@ class Product(models.Model):
 
 class Location(models.Model):
     name = models.CharField(max_length=30)
+
+
+
+class Business(models.Model):
+    Bizname=models.CharField(max_length=60)
+    profile=models.ForeignKey(Product,on_delete=models.CASCADE)
+    biz_email=models.EmailField()
+    biz_desc=models.CharField(max_length=100)
+
+    @classmethod
+    def search_biz(cls,search_term):
+        
+        business=cls.objects.filter(Bizname__icontains=search_term)
+        return business
+
+
+    @classmethod
+    def create_business():
+        pass
+
+    @classmethod
+    def delete_business():
+        pass
+
+    @classmethod
+    def find_business(business_id):
+        pass
+
+    @classmethod
+    def update_business():
+        pass
+
+
+
+class User_profile(models.Model):
+    name=models.CharField(max_length=60)
+    product=models.ForeignKey(Product,null=True,on_delete=models.CASCADE)
+    email=models.EmailField()
+    profile_photo=models.ImageField(upload_to='gallery/',blank=True,null=True)
+
+
+    @classmethod
+    def get_profile(cls): 
+        profile=profile_photo.objects.all()
+        return profile
+
+
+

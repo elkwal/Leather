@@ -1,0 +1,20 @@
+body{
+    background-color: purple;
+    color: #fff;
+  }
+  button{
+    color: #082845;
+    background-color: #fff;
+    border: none;
+  }
+  button i{
+    font-size: 20px;
+  }
+  .jumbotron{
+    background-color: #EFEFEF;
+    color: #082845;
+  }
+  .panel{
+    padding-bottom: 40px;
+  }
+  

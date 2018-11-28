@@ -14,10 +14,12 @@
   {% block styles %}
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
+
   {% endblock %}
 
 </head>
-<body>
+<body>>
   {% include "navbar.html" %}
   <hr>
 

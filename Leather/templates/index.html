@@ -1,10 +1,15 @@
-{%extends 'base.html'%}
-{% load bootstrap3 %}
-{% load staticfiles %}
-{% load static%}
-
-
+{% extends 'temps/base.html'%}
+{% load static %}
 {% block content %}
-{{block.super}}
+{{ block.super }}
 
+<div class="container">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+<div class="jumbotron">
+    <h2 class="display-3" style="color:indigo">Leather Networking</h2>
+    <h4 class="lead" style="color:rgb(87, 165, 42);">Welcome to the best application that connects all the leather shops in Kenya</h4>
+    <hr class="my-4">
+</div>
+</div>
 {% endblock %}

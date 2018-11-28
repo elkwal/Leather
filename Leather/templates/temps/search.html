@@ -1,0 +1,34 @@
+{% extends 'temps/base.html' %}
+{% load static %}
+{% block content %}
+{{ block.super }}
+<p>Hi</p>
+
+
+<div class="row">
+        {% if business%}
+          <h2>Found {{message}}</h2>
+        {% else %}
+          <h2> N0 user by name {{message}}</h2>
+        {% endif %}
+    
+      </div>
+      
+
+      <div class="row">
+
+            {% if business %}
+              {% for biz in business %}
+                <div class="col-sm-6 col-md-12">
+                 
+                    
+                   
+                  
+                  <span class="badge badge-secondary"><h3>name:{{biz.Bizname}}</h3></span>
+                  <p>Email:{{biz.biz_email}}</p>
+                  <p>Description:{{biz.biz_desc}}</p>
+                </div>
+              {% endfor %}
+            {% endif %}
+            </div>
+{% endblock  %}
