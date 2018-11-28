@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url='/accounts/login/')
 def index(request):
-    current_user = request.user
+    # current_user = request.user
     # projects = Project.get_all()
     return render(request,'index.html',{})
 
