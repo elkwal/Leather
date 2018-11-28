@@ -17,19 +17,19 @@
 <body>
 
 <div class="container-fluid">
-<nav class="navbar">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="row">
   
   <div class="col-md-4">
-    <a class="navbar-header" href="{% url 'indexPage' %}" style="margin-left:40px;color:black;"><h1>Leather Networking </h1></a>
+    <a class="navbar-header" href="{% url 'indexPage' %}" style="margin-left:40px;color:purple;"><h1>Leather Networking </h1></a>
   </div>
-  <div class="col-md-4" class="navbar navbar-right">
+  <div class="col-md-6" class="navbar navbar-right">
       {% if user.is_authenticated %}
-      <h6><a  class="navbar-brand" href="/accounts/register/" style="color:black;"> Register</a>
-      <a class="navbar-brand" <a href="/logout/"style="color:black;">Log Out</a>
+      <h6><a  class="navbar-brand" href="/accounts/register/" style="color:brown;"> Register</a>
+      <a class="navbar-brand"  href="/logout/"style="color:brown;">Log Out</a>
       {% else %}
       <li>
-        <a class="navbar-brand" href="/accounts/login" style="color:black;">Login</a>
+        <a class="navbar-brand" href="/accounts/login" style="color:brown;">Login</a>
       </li>
       {% endif %}
     </div>
