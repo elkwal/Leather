@@ -12,6 +12,15 @@ urlpatterns=[
     url(r'^allbiz/',views.allbiz,name='allbiz'),
     url(r'^search/', views.search_results, name='search_results'),
     url(r'^upload/',views.upload, name='upload'),
+    url('profile/$', views.profile, name='profile'),
+    url('^town/(\w+)', views.town, name='town'),
+    url('update/$', views.update, name='update'),
+    url('^new_town/$', views.new_town, name='new_town'),
+    url('^join/(\d+)', views.join, name='join'),
+    url('^all_towns/$',views.all_towns,name='all_towns'),
+    url('^comment/(\d+)', views.comment, name='comment'),
+    url('^new_post/$', views.new_post, name='new_post'),
+
 ]
 
 if settings.DEBUG:
