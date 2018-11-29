@@ -1,5 +1,5 @@
 body{
-    background-color: purple;
+    background-color: blueviolet;
     color: #fff;
   }
   button{
@@ -12,7 +12,7 @@ body{
   }
   .jumbotron{
     background-color: #EFEFEF;
-    color: #082845;
+    color: #1565b1;
   }
   .panel{
     padding-bottom: 40px;
