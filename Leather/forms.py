@@ -17,9 +17,9 @@ class EditProfile(forms.ModelForm):
 
 class EditUser(forms.ModelForm):
     class Meta:
-        model = User
+        model = User_profile
         exclude = []
-        fields = ['first_name', 'last_name', 'email']
+        fields = []
 
 
 class NewTown(forms.ModelForm):
